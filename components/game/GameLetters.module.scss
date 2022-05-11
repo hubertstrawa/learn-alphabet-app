@@ -1,0 +1,110 @@
+.container {
+  background: #FFEBF9;
+  min-height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}
+
+.wormsLeft {
+  position: absolute;
+  left: 0;
+  width: 20%;
+}
+.wormsRight {
+  position: absolute;
+  right: 0;
+  width: 20%;
+}
+.game {
+  background: url('/Background-letters.svg') no-repeat;
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 12%;
+  min-height: 65vh;
+}
+
+.list {
+  list-style: none;
+  // display: flex;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 100px;
+}
+
+.list li {
+  /* border: 1px solid orange; */
+  /* padding: 3rem; */
+  cursor: pointer;
+  border-radius: 22px;
+  font-size: 3.2rem;
+  width: 100px;
+  font-weight: bold;
+  font-family: 'Paytone One', cursive;
+  height: 100px;
+  /* color: brown; */
+  display: flex;
+  color: #BF62A2;
+  justify-content: center;
+  background-color: #fff;
+  align-items: center;
+  -webkit-box-shadow: 4px 1px 24px -5px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 4px 1px 24px -5px rgba(66, 68, 90, 1);
+  box-shadow: 4px 1px 24px -5px rgba(66, 68, 90, 1);
+  // transition-property: background-color, font-size;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.list li:hover {
+  background-color: #FFEBF9;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.chooseSpokenBy {
+  margin-top: 2rem;
+  display: flex;
+  gap: 30px;
+}
+
+.chooseSpokenBy > div {
+  width: 50%;
+  max-height: 200px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.chooseSpokenBy > div:hover img {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.chooseSpokenBy > div img {
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  img {
+    width: 60px;
+  }
+}
+

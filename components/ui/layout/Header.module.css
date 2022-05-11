@@ -1,0 +1,29 @@
+.header {
+  /* background-color: lightpink; */
+  padding: 1.5rem;
+  display: flex;
+  color: #000;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.navigation {
+  /* display: flex;
+  align-items: center; */
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navigation ul li {
+  color: purple;
+}

@@ -1,0 +1,36 @@
+.container {
+  background: url('/Background.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  .showcase {
+    padding: 190px 0 0 160px;
+
+    h1 {
+      font-size: 90px;
+      line-height: 109px;
+      color: #775CA6;
+      font-weight: 600;
+    }
+
+    .button {
+      border: 1px solid #775CA6;
+      border-radius: 10px;
+      background: none;
+      color: #775CA6;
+      font-size: 32px;
+      cursor: pointer;
+      margin-top: 30px;
+      font-weight: 300;
+      width: 200px;
+      padding: 8px 16px;
+    }
+  }
+
+  .img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
